@@ -33,6 +33,7 @@
         }
 
         Sfdc.canvas(function() {
+            alert("This canvas app must be included within an iframe");
             var sr = JSON.parse('<%=signedRequestJson%>');
             // Save the token
             Sfdc.canvas.oauth.token(sr.oauthToken);
